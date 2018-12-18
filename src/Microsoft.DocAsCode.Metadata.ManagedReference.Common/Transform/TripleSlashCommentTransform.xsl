@@ -44,7 +44,7 @@
       <xsl:element name="code">
         <xsl:if test="normalize-space(@language)">
           <xsl:attribute name="class">
-            <xsl:value-of select="@language" />
+            lang-<xsl:value-of select="@language" />
           </xsl:attribute>
         </xsl:if>
         <xsl:copy-of select="@source|@region"/>
